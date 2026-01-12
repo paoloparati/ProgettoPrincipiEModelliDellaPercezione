@@ -4,7 +4,7 @@ Questo repository fornisce una guida dettagliata passo-passo per l’addestramen
 
 Il progetto si basa sull’utilizzo di:
 
-- [BBBC006 Dataset (Broad Bioimage Benchmark Collection)](https://bbbc.broadinstitute.org/BBBC006))
+- [BBBC006 Dataset (Broad Bioimage Benchmark Collection)](bbbc.broadinstitute.org/BBBC006)
 
 - [Kodak PhotoCD](https://www.kaggle.com/datasets/sherylmehta/kodak-dataset?select=kodim12.png)
 
