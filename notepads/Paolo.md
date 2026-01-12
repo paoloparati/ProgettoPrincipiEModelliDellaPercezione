@@ -179,7 +179,7 @@ Il risultato finale è un’immagine **denoised**, della stessa dimensione dell�
 
 
 
-#### **Riferimenti **
+#### Riferimenti 
 
 1. **Ronneberger, O., Fischer, P., & Brox, T. (2015).** *U-Net: Convolutional Networks for Biomedical Image Segmentation.* MICCAI 2015. https://arxiv.org/abs/1505.04597
 2. **Çiçek, Ö., Abdulkadir, A., Lienkamp, S.S., Brox, T., Ronneberger, O. (2016).** *3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation.* MICCAI 2016.
