@@ -4,7 +4,7 @@ Questo repository fornisce una guida dettagliata passo-passo per l’addestramen
 
 Il progetto si basa sull’utilizzo di:
 
-- [BBBC006 Dataset (Broad Bioimage Benchmark Collection)](bbbc.broadinstitute.org/BBBC006)
+- [JUMP Cell Painting Datasets]([bbbc.broadinstitute.org/BBBC006](https://github.com/jump-cellpainting/datasets))
 
 - [Kodak PhotoCD](https://www.kaggle.com/datasets/sherylmehta/kodak-dataset?select=kodim12.png)
 
@@ -35,7 +35,7 @@ conda activate denoising
 pip install -r env/requirements.txt
 ```
 ### Eseguire gli script
-Segui i notebook Jupyter e esegui le celle per addestrare la rete U-Net con l’algoritmo Noise2Void sul dataset BBBC006 e sul dataset di Konda PhotoCD, osservando i risultati del denoising.
+Segui i notebook Jupyter e esegui le celle per addestrare la rete U-Net con l’algoritmo Noise2Void sul JUMP Cell Painting Datasets e sul dataset di Konda PhotoCD, osservando i risultati del denoising.
 ```bash
 
 ```
