@@ -35,12 +35,12 @@ conda activate denoising
 pip install -r env/requirements.txt
 ```
 ### Eseguire gli script
-Segui i notebook Jupyter e esegui le celle per addestrare la rete U-Net con l’algoritmo Noise2Void sul JUMP Cell Painting Datasets e sul dataset di Konda PhotoCD, osservando i risultati del denoising.
+Segui i notebook Jupyter e esegui le celle per addestrare la rete U-Net con l’algoritmo Noise2Void sul JUMP Cell Painting Datasets e sul BSD68 Benchmark Dataset, osservando i risultati del denoising.
 ```bash
-
+https://github.com/paoloparati/ProgettoPrincipiEModelliDellaPercezione/blob/main/jump_cells.ipynb
 ```
 ```bash
-
+https://github.com/paoloparati/ProgettoPrincipiEModelliDellaPercezione/blob/main/bsd68.ipynb
 ```
 
 
