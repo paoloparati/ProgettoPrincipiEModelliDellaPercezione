@@ -148,20 +148,16 @@ Ingredienti:
   
 
 #### DATASET
+Motivazione della scelta del dataset
 
-Nel progetto abbiamo deciso di utilizzare il **dataset BBBC006**, appartenente alla Broad Bioimage Benchmark Collection, costituito da immagini di microscopia cellulare fluorescente. Il dataset è ampiamente utilizzato nella letteratura bio-medica per la valutazione di algoritmi di analisi delle immagini ed è caratterizzato da immagini acquisite in condizioni sperimentali realistiche, affette da rumore di acquisizione e imperfezioni strumentali.
+La scelta del dataset Jump Cell Painting è motivata dalla sua rappresentatività di scenari realistici tipici dell’imaging cellulare ad alta complessità, nei quali la presenza di rumore è inevitabile. Le immagini acquisite tramite microscopia fluorescente includono più canali per diverse strutture cellulari (nuclei, mitocondri, reticolo endoplasmatico, ecc.), e riflettono fedelmente la variabilità sperimentale e le condizioni reali di acquisizione.
 
-##### Presenza di rumore reale
+Il dataset non fornisce immagini “pulite” prive di rumore artificiale, rendendolo ideale per sperimentare approcci self-supervised al denoising, come Noise2Void o Noise2Self, che permettono l’addestramento del modello senza necessità di immagini di riferimento completamente prive di rumore. L’utilizzo di dati reali e multicanale consente inoltre di valutare l’efficacia dei modelli di deep learning in contesti biologici complessi, confrontando i risultati con metodi tradizionali di riduzione del rumore.
 
-Le immagini del dataset BBBC006 presentano **rumore reale di acquisizione**, dovuto a fattori fisici e strumentali quali il rumore del sensore, la variabilità dell’illuminazione e le limitazioni intrinseche dei sistemi di microscopia a fluorescenza. 
+Preprocessing dei dati
 
-##### Motivazione della scelta del dataset
+Il preprocessing delle immagini del dataset Jump Cell Painting comprende due fasi principali:
 
-La scelta del dataset BBBC006 è motivata dalla sua rappresentatività di **scenari realistici tipici dell’imaging biologico**, nei quali la presenza di rumore è inevitabile. Sebbene il dataset includa annotazioni utili per altri compiti (come la segmentazione dei nuclei), non fornisce una versione completamente priva di rumore delle immagini, condizione che riflette fedelmente i casi reali di acquisizione microscopica. Questo rende BBBC006 particolarmente adatto alla sperimentazione di **approcci self-supervised per il denoising**, come Noise2Void, che permettono l’addestramento del modello senza la necessità di immagini pulite di riferimento. L’impiego di dati reali consente inoltre un confronto più significativo con i metodi tradizionali di riduzione del rumore.
+- Normalizzazione: i valori di intensità dei pixel, generalmente in formato TIFF a 16 bit, vengono scalati in un intervallo [0,1]. Questa operazione assicura stabilità numerica durante l’addestramento della rete neurale e facilita la convergenza dell’algoritmo di apprendimento.
 
-##### Preprocessing dei dati
-
-Il preprocessing delle immagini del dataset BBBC006 comprende due fasi principali:
-
-- **Normalizzazione**: i valori di intensità dei pixel vengono scalati, tipicamente nell’intervallo [0,1], al fine di garantire stabilità numerica e favorire una corretta convergenza della rete neurale durante la fase di addestramento.
-- **Estrazione di patch**: le immagini vengono suddivise in patch di dimensioni ridotte. Questa operazione consente di aumentare il numero di campioni disponibili per l’addestramento e permette alla rete U-Net di apprendere efficacemente correlazioni locali tra i pixel, riducendo al contempo il carico computazionale.
+- Estrazione di patch: le immagini multicanale vengono suddivise in patch di dimensioni ridotte (ad esempio 64×64 o 128×128 pixel). Questa operazione aumenta il numero di campioni disponibili per l’addestramento, riduce il carico computazionale e permette alla rete di apprendere correlazioni locali tra pixel e canali, migliorando la qualità del denoising.
