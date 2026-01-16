@@ -104,8 +104,7 @@ Generative Adversarial Networks (GAN)
 Due reti neurali che lavorano in competizione tra loro:
 
 - Generatore: produce immagini pulite che siano il più simili possibile a quelle reali.
-- Discriminatore: valuta l'immagine e cerca di distinguere tra immagini reali e false.
-- 
+- Discriminatore: valuta l'immagine e cerca di distinguere tra immagini reali e false. 
 
 #### GROUND TRUTH
 
