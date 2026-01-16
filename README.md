@@ -4,7 +4,7 @@ Questo repository fornisce una guida dettagliata passo-passo per l’addestramen
 
 Il progetto si basa sull’utilizzo di:
 
-- [JUMP Cell Painting Datasets]([bbbc.broadinstitute.org/BBBC006](https://github.com/jump-cellpainting/datasets))
+- [JUMP Cell Painting Datasets](https://github.com/jump-cellpainting/datasets))
 
 - [BSD68 Benchmark Dataset](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/)
 
