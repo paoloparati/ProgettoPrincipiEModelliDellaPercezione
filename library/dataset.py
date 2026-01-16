@@ -52,3 +52,4 @@ def split_jump_dataset(path, split_ratio=0.8):
     dpath = path.replace('.tiff', f"_val.tiff")
     tifffile.imwrite(dpath, data=val)
     print(f"Validation dataset saved to {dpath}")
+
